@@ -141,7 +141,7 @@ public class Mosse_Possibili implements Iterable<Mossa> {
 					if(damiera.getPosizione(x-2, y+2).vuota())
 					{
 						nuovoPercorso[nuovoPercorso.length-1]=damiera.getPosizione(x-1, y+1);
-						punti=damiera.getPosizione(x-1, y+1).getPezzo() instanceof Dama ? pun+10 : pun+1;
+						punti=damiera.getPosizione(x-1, y+1).getPezzo() instanceof Dama ? pun+5 : pun+1;
 						listaMosse.add(new Mossa(damiera.getPosizione(x, y), damiera.getPosizione(x-2, y+2), nuovoPercorso, punti));
 						
 						if(tur)
@@ -176,7 +176,7 @@ public class Mosse_Possibili implements Iterable<Mossa> {
 					if(damiera.getPosizione(x-2, y-2).vuota())
 					{
 						nuovoPercorso[nuovoPercorso.length-1]=damiera.getPosizione(x-1, y-1);
-						punti=damiera.getPosizione(x-1, y-1).getPezzo() instanceof Dama ? pun+20 : pun+1;
+						punti=damiera.getPosizione(x-1, y-1).getPezzo() instanceof Dama ? pun+5 : pun+1;
 						listaMosse.add(new Mossa(damiera.getPosizione(x, y), damiera.getPosizione(x-2, y-2), nuovoPercorso, punti));
 						
 						if(tur)
@@ -219,7 +219,7 @@ public class Mosse_Possibili implements Iterable<Mossa> {
 					if(damiera.getPosizione(x+2, y+2).vuota())
 					{
 						nuovoPercorso[nuovoPercorso.length-1]=damiera.getPosizione(x+1, y+1);
-						punti=damiera.getPosizione(x+1, y+1).getPezzo() instanceof Dama ? pun+20 : pun+1;
+						punti=damiera.getPosizione(x+1, y+1).getPezzo() instanceof Dama ? pun+5 : pun+1;
 						listaMosse.add(new Mossa(damiera.getPosizione(x, y), damiera.getPosizione(x+2, y+2), nuovoPercorso, punti));
 						
 						if(tur)
@@ -254,7 +254,7 @@ public class Mosse_Possibili implements Iterable<Mossa> {
 					if(damiera.getPosizione(x+2, y-2).vuota())
 					{
 						nuovoPercorso[nuovoPercorso.length-1]=damiera.getPosizione(x+1, y-1);
-						punti=damiera.getPosizione(x+1, y-1).getPezzo() instanceof Dama ? pun+20 : pun+1;
+						punti=damiera.getPosizione(x+1, y-1).getPezzo() instanceof Dama ? pun+5 : pun+1;
 						listaMosse.add(new Mossa(damiera.getPosizione(x, y), damiera.getPosizione(x+2, y-2), nuovoPercorso, punti));
 						
 						if(tur)
